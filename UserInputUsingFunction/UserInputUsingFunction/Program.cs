@@ -6,17 +6,30 @@ namespace UserInputUsingFunction
     {
         static void Main()
         {
-            double m = InputDouble("mass: ");
-            double a = InputDouble("acceleration: ");
-
-            double f = m * a;
-            Console.WriteLine($"Force = {f}");
+            double m = Input("mass: ");
+            double a = Input("acceleration: ");
+            Console.WriteLine($"Force = {Force(m, a)}");
         }
 
-        private static double InputDouble(string displayText)
+        private static double Force(double m, double a)
         {
-            Console.Write(displayText);
-            return double.Parse(Console.ReadLine());
+            return m * a;
+        }
+
+        private static double Input(string displayText)
+        {
+            while (true)
+            {
+                Console.Write(displayText);
+                try
+                {
+                    return double.Parse(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine($"Please enter a real number");
+                }
+            }
         }
     }
 }
