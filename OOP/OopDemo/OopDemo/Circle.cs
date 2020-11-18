@@ -31,5 +31,15 @@ namespace OopDemo
         }
 
         public Point Center { get; set; }
+
+        public float Area => Radius * Radius;
+
+        //public float Area
+        //{
+        //    get
+        //    {
+        //        return Radius * Radius;
+        //    }
+        //}
     }
 }
