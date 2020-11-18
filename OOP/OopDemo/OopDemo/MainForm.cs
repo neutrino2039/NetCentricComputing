@@ -19,6 +19,7 @@ namespace OopDemo
             InitializeComponent();
 
             circle.Radius = 50;
+            circle.Radius = -10;
             circle.Center = new Point(50, 50);
 
             radiusTrackBar.Maximum = panel.Width / 2;

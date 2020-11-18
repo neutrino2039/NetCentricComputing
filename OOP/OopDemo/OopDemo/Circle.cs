@@ -19,7 +19,16 @@ namespace OopDemo
             g.DrawEllipse(Pens.Black, x, y, width, height);
         }
 
-        public float Radius { get; set; }
+        private float radius = 0;
+        public float Radius
+        {
+            get { return radius; }
+            set
+            {
+                if (value < 0) return;
+                radius = value;
+            }
+        }
 
         public Point Center { get; set; }
     }
