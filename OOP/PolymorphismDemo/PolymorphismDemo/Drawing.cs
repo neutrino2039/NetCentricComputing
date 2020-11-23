@@ -2,8 +2,8 @@
 
 namespace PolymorphismDemo
 {
-    public class Drawing
+    public abstract class Drawing
     {
-        public virtual void Draw(Graphics g) { }
+        public abstract void Draw(Graphics g);
     }
 }
