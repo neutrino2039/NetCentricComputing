@@ -22,7 +22,7 @@ namespace PolymorphismDemo
 
         public float Breadth { get; set; }
 
-        public override void Draw(Graphics g)
+        public void Draw(Graphics g)
         {
             g.DrawRectangle(
                 Pens.Black,

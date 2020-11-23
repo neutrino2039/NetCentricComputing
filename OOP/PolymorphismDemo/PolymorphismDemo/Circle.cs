@@ -14,7 +14,7 @@ namespace PolymorphismDemo
 
         public float Radius { get; set; }
 
-        public override void Draw(Graphics g)
+        public void Draw(Graphics g)
         {
             float x = Center.X - Radius;
             float y = Center.Y - Radius;
